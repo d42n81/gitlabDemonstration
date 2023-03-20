@@ -1,0 +1,17 @@
+{
+  "name": "gitlabdemonstration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-devtools/cypress": "^4.6.1",
+    "@axe-devtools/reporter": "^4.5.1",
+    "cypress": "^11.2.0"
+  }
+}
