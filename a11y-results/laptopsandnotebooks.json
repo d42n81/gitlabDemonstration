@@ -1,5 +1,5 @@
 {
-  "endTime": "2023-03-20T14:29:06.394Z",
+  "endTime": "2023-03-29T14:21:45.794Z",
   "findings": {
     "testEngine": {
       "name": "axe-core",
@@ -9,13 +9,13 @@
       "name": "axe"
     },
     "testEnvironment": {
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/11.2.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
       "windowWidth": 1000,
       "windowHeight": 660,
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2023-03-20T14:29:06.394Z",
+    "timestamp": "2023-03-29T14:21:45.794Z",
     "url": "http://abcdcomputech.dequecloud.com/laptopsandnotebooks.php",
     "toolOptions": {
       "reporter": "v1"
@@ -550,21 +550,6 @@
         "description": "Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text",
         "help": "<svg> elements with an img role must have an alternative text",
         "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/svg-img-alt?application=cypress",
-        "nodes": []
-      },
-      {
-        "id": "th-has-data-cells",
-        "impact": null,
-        "tags": [
-          "cat.tables",
-          "wcag2a",
-          "wcag131",
-          "section508",
-          "section508.22.g"
-        ],
-        "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
-        "help": "Table headers in a data table must refer to data cells",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/th-has-data-cells?application=cypress",
         "nodes": []
       },
       {
@@ -3925,6 +3910,40 @@
                 "relatedNodes": [],
                 "impact": "serious",
                 "message": "The headers attribute is exclusively used to refer to other cells in the table"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<table class=\"listingsTable\">",
+            "target": [
+              "table"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "th-has-data-cells",
+        "impact": null,
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g"
+        ],
+        "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+        "help": "Table headers in a data table must refer to data cells",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.6/th-has-data-cells?application=cypress",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "th-has-data-cells",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "All table header cells refer to data cells"
               }
             ],
             "none": [],
